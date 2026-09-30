@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lab 3 - CSS Structure and Properties</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Embedded CSS -->
+    <style>
+        .image-preview img {
+            border-top: 30px solid skyblue;
+            border-right: 30px solid lightpink;
+            border-bottom: 30px solid lightgreen;
+            border-left: 30px solid #ffefd5;
+        }
+
+        p > span {
+            color: red;
+        }
+
+        #header span {
+            color: pink;
+        }
+
+        span {
+            color: green;
+        }
+
+        #header *:last-child {
+            color: orange;
+        }
+
+        #header span:first-child:hover {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="text-align: center;">Lab 3: CSS Structure and Properties</h1>
+
+    
+    <div class="image-preview">
+        <img src="C:\Users\Admin\Downloads\kau logo.png">
+    </div>
+
+    <hr>
+
+    
+    <div id="header">
+        <span class="myclass1">Every</span>
+        <span class="myclass2">one can</span>
+        <span class="myclass3">success.</span>
+    </div>
+
+    <p>
+        One machine can do the work of fifty ordinary men.
+        <span class="myclass4">
+            No machine can do the work of one extraordinary man.
+        </span>
+    </p>
+
+    <!-- Required answer table -->
+    <h2>CSS Selector Results</h2>
+
+    <table>
+        <tr>
+            <th>Element</th>
+            <th>Color</th>
+            <th>Color when mouse over</th>
+        </tr>
+
+        <tr>
+            <td>span.myclass1</td>
+            <td>Pink</td>
+            <td>Blue</td>
+        </tr>
+
+        <tr>
+            <td>span.myclass2</td>
+            <td>Pink</td>
+            <td>Pink</td>
+        </tr>
+
+        <tr>
+            <td>span.myclass3</td>
+            <td>Orange</td>
+            <td>Orange</td>
+        </tr>
+
+        <tr>
+            <td>span.myclass4</td>
+            <td>Red</td>
+            <td>Red</td>
+        </tr>
+    </table>
+
+</body>
+</html>
