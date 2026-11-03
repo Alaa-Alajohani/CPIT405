@@ -130,7 +130,6 @@ h1, h2, h3 { font-family: var(--serif); letter-spacing: -.055em; }
 .language-row { display: flex; justify-content: space-between; padding-block: 8px; border-top: 1px solid var(--line); font-size: 13px; }
 .language-row span:last-child { color: var(--muted); }
 .sidebar-note { display: flex; gap: 11px; padding: 17px; border-radius: 10px; background: var(--violet-pale); }
-.note-star { color: var(--violet); }
 .sidebar-note p { margin: 0; color: #615a7a; font-size: 13px; }
 
 /* Projects page */
