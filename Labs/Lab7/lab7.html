@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Search | Lab 7</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero"><div class="hero-inner"><p class="eyebrow">CPIT 405 · LAB 07</p><h1>Find your next frame.</h1><p>Search the Unsplash photo library and compare three ways to request data.</p></div></header>
+  <main class="page-shell">
+    <section class="search-panel" aria-label="Unsplash photo search">
+      <form id="search-form">
+        <div class="credentials-row">
+          <label class="key-field" for="access-key"><span>Unsplash Access Key</span><input id="access-key" name="accessKey" type="password" autocomplete="off" placeholder="Paste your Access Key" required><small>Your key is used for this request only and is not saved.</small></label>
+          <label class="method-field" for="request-method"><span>Request method</span><select id="request-method" name="method"><option value="async">Fetch with async / await</option><option value="promise">Fetch with Promises</option><option value="xhr">XMLHttpRequest</option></select></label>
+        </div>
+        <div class="query-row"><label class="visually-hidden" for="search-query">Search photos</label><span aria-hidden="true">⌕</span><input id="search-query" name="query" type="search" placeholder="Try “desert landscape” or “architecture”" required><button type="submit" id="search-button">Search photos <span aria-hidden="true">→</span></button></div>
+      </form>
+      <p class="form-hint">Get an Access Key from <a href="https://unsplash.com/developers" target="_blank" rel="noreferrer">Unsplash for Developers</a>. The key is sent to api.unsplash.com in the Authorization header, as required by the lab.</p>
+    </section>
+    <section class="results-section" aria-live="polite"><div class="results-heading"><div><p class="eyebrow">THE COLLECTION</p><h2 id="results-title">Photos for your search</h2></div><p id="result-summary"></p></div><div id="message" class="message">Enter your key and a search term to load photos.</div><div id="photo-grid" class="photo-grid"></div></section>
+    <footer>CPIT 405 · Internet Applications <span>Asynchronous JavaScript and Ajax</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

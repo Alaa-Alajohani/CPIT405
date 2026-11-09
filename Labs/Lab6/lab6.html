@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6: Like or Dislike</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>Lab 6: Like or dislike</h1>
+            <button id="reset-button" type="button">Reset</button>
+        </header>
+
+        <section aria-labelledby="vote-title">
+            <h2 id="vote-title">Like or dislike</h2>
+            <div class="vote-buttons">
+                <button id="like-button" type="button" data-vote="like">
+                    Like 👍 <span id="like-count">0</span>
+                </button>
+                <button id="dislike-button" type="button" data-vote="dislike">
+                    Dislike 👎 <span id="dislike-count">0</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="comment-section" aria-labelledby="comments-title">
+            <h2 id="comments-title">Comments</h2>
+            <form id="comment-form">
+                <label class="visually-hidden" for="comment-input">Write a comment</label>
+                <textarea id="comment-input" name="comment" rows="5" maxlength="280" placeholder="Write a comment..."></textarea>
+                <div class="comment-buttons">
+                    <button id="comment-submit" type="submit" disabled>Submit</button>
+                    <button id="clear-comments" type="button">Clear</button>
+                </div>
+            </form>
+            <div id="comments-list" aria-live="polite"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

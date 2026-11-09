@@ -1,0 +1,20 @@
+*{box-sizing:border-box}
+body{margin:0;min-width:320px;background:#fff;color:#111;font-family:Arial,sans-serif}
+.site-header{padding:34px 20px 12px;text-align:center}
+.header-inner{max-width:660px;margin:auto}
+.eyebrow{font-family:Arial,sans-serif;font-size:.68rem;letter-spacing:.14em;font-weight:700;color:#666;margin:0 0 13px}
+h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(1.8rem,5vw,2.35rem);margin:0 0 9px;font-weight:700}
+.intro{margin:0;color:#666;font-size:.9rem}
+.page-shell{max-width:590px;padding:0 20px;margin:0 auto}
+.order-card{margin:14px auto 0;padding:0 0 18px;background:#fff}
+.field{display:flex;flex-direction:column;gap:5px;margin:0 0 1px}
+.field label{font-family:Georgia,'Times New Roman',serif;font-size:1rem;font-weight:400;color:#111}
+.field input,.field textarea{display:block;width:100%;border:1px solid #c9c9c9;border-radius:5px;background:#fff;padding:10px 11px;font:inherit;font-size:.92rem;color:#222;box-shadow:inset 0 1px 2px #00000008}
+.field input{height:41px}
+.field textarea{min-height:180px;resize:vertical;font-family:Consolas,monospace}
+.field input:focus,.field textarea:focus{outline:0;border-color:#777;box-shadow:0 0 0 2px #22222215}
+.submit-button{display:block;width:100%;margin-top:4px;border:0;border-radius:4px;background:#050505;color:#fff;padding:12px;font:inherit;font-size:.9rem;font-weight:600;cursor:pointer}
+.submit-button:hover{background:#333}
+.submit-button:focus-visible{outline:3px solid #777;outline-offset:3px}
+.page-footer{display:flex;justify-content:center;flex-direction:column;gap:7px;padding:55px 0 26px;color:#aaa;font-size:.84rem;text-align:center}
+@media(max-width:480px){.site-header{padding-top:28px}.page-shell{padding:0 16px}.page-footer{padding-top:38px}}
